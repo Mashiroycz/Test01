@@ -2,6 +2,10 @@ import React from 'react';
 import './siteMsg.css';
 import iconTitle from '../../static/icon-title.png';
 
+function Applid(props) {
+  return (<div>{ props.children }</div>);
+}
+
 class SiteMsg extends React.Component {
   constructor(props) {
     super(props);
@@ -24,11 +28,7 @@ class SiteMsg extends React.Component {
       <div style={{ color: 'red' }}>
         <ul>{testLi}</ul>
         <div className='wrapper'>
-          <div className='box1'>1</div>
-          <div className='box2'>
-            <img className='boxImg' alt='图片' src={iconTitle} />
-          </div>
-          <div className='box3'>3</div>
+          <Applid>content</Applid>
         </div>
       </div>
     );

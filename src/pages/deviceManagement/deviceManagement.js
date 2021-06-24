@@ -202,7 +202,7 @@ class DeviceManagement extends React.Component {
           console.log(errorInfo);
         });
     }
-    // this.setState({ addVisible: false });
+    this.setState({ addVisible: false });
   };
 
   edit = (index) => (event) => {
