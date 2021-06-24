@@ -1,0 +1,61 @@
+{
+  // Use the AirBnB JS styleguide - https://github.com/airbnb/javascript
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "extends": "airbnb", // airbnb风格
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "Babel": true,
+    "React": true
+  },
+  // We use 'babel-eslint' mainly for React Native Classes
+  "parser": "babel-eslint",
+  "ecmaFeatures": {
+    "classes": true
+  },
+
+  // jsx相关插件
+  "plugins": ["react", "jsx-a11y", "import"],
+
+  // We can add/overwrite custom rules here
+  "rules": {
+    "linebreak-style": [
+      "off",
+      "unix"
+    ],
+    "quotes": [
+        "error",
+        "single"
+    ],
+    // React Native has JSX in JS files
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+
+    // React Native includes images via require("../images/example.png")
+    "global-require": 1,
+    "jsx-quotes": 0,
+    "class-methods-use-this": "off",
+      // 关闭react默认的props-type验证
+    "react/prop-types": [0],
+    "arrow-parens": "off",
+    // 关掉圆括号
+    "object-curly-newline": 0,
+    // 没用的变量
+    "no-unused-vars": 1,
+    // 没有用到的依赖，也改成警告模式
+    "import/no-extraneous-dependencies": 1,
+    // class必须带构造函数
+    "react/prefer-stateless-function": 1,
+    // 末尾数字加逗号
+    "comma-dangle": 0,
+    // 绑定this
+    " react/jsx-no-bind": 0,
+    "react/jsx-props-no-spreading": 0,
+    "no-param-reassign": 0,
+    "react/destructuring-assignment": 0,
+    "max-len": 0
+  }
+}

@@ -1,0 +1,52 @@
+.deviceManagement-model {
+  padding: 4px 10px;
+  background-color: #f2f2f2;
+  height: 100%;
+  overflow-y: hidden;
+}
+.deviceManagement-model .show-wrapper {
+  border: 1px solid #acacac;
+  height: 90%;
+  overflow: hidden;
+}
+.deviceManagement-model .action-wrapper {
+  padding: 6px 0;
+}
+.ant-modal .basicMsg {
+  margin-left: 26px;
+  margin-bottom: 15px;
+}
+.ant-modal .basicMsg-title {
+  position: relative;
+}
+
+.ant-modal .basicMsg-title::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+  top: -1px;
+  width: 6px;
+  height: 20px;
+  background-color: #0099ff;
+}
+.ant-modal .table-wrapper {
+  padding: 0 16px;
+}
+
+.ant-modal .factorMsg {
+  margin-bottom: 15px;
+}
+.ant-modal .factorMsg-title {
+  position: relative;
+}
+.ant-modal .factorMsg-title::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+  top: -1px;
+  width: 6px;
+  height: 20px;
+  background-color: #0099ff;
+}

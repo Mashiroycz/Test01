@@ -1,0 +1,28 @@
+.wrapper {
+  width: 800px;
+  height: 800px;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .box1 {
+  width: 150px;
+  background-color: springgreen;
+}
+.wrapper .box2 {
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: yellowgreen;
+}
+.wrapper .box3 {
+  width: 150px;
+  background-color: pink;
+}
+.boxImg {
+  width: 50px;
+  height: 30px;
+}

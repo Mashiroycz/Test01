@@ -1,0 +1,63 @@
+@import '~antd/dist/antd.css';
+.App {
+  text-align: left;
+  height: 100%;
+  width: 100%;
+}
+
+.App-header {
+  background-color: #0099ff;
+  height: 60px;
+  padding: 2px 4px;
+}
+.App-header::before {
+  height: 100%;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+}
+.App-header .title-box {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33%;
+}
+.App-header .menu-app {
+  display: inline-block;
+  vertical-align: middle;
+  width: 66%;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+}
+.menu-app,
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-item-group-title,
+.ant-menu-dark .ant-menu-item > a,
+.ant-menu-dark .ant-menu-item > span > a .ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+  color: rgba(255, 255, 255);
+}
+.menu-app,
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+  color: rgba(255, 255, 255);
+  background: rgba(36, 124, 255, 0.5);
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
